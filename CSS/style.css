@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll ;
+
+}
+
+.link
+{
+    margin-top: 16%;
+}
+
+.navButton{
+    border-style: none none solid;
+    background-color: transparent;
+    color: white;
+}
+
+.ndongala{
+    font-family: 'Righteous', cursive;
+}
+
+.circle {
+
+    position: absolute;
+    margin-top: 5vh;
+    margin-left: 90vw;
+}
+
+.arrow {
+    margin-left: 30px;
+    width: 1em;
+    height: 0.7em;
+    position: absolute;
+}
+
+.contact
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 55vw;
+    width: 200px;
+    height: 40px;
+   /* background-color: red;*/
+}
+
+.spanContact{
+    display: flex;
+    position: absolute;
+    color: white;
+
+}
+
+
+
+
+#container .box {
+    width: 100vw;
+    height: 100vh;
+    display: inline-block;
+    position: relative;
+}
+#container .box > div {
+    width: 100px;
+    height: 100px;
+    font-size: 96px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -50px 0 0 -50px;
+    line-height: 0.7;
+    font-weight: bold;
+}
+#container {
+
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+    transform: rotate(270deg) translateX(-100%);
+    transform-origin: top left;
+    background-color: #999;
+    position: absolute;
+    width: 100vh;
+    height: 100vw;
+
+}
+#container2 {
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+    white-space: nowrap;
+    font-size: 0;
+
+
+}
+
+.one {
+    background-color: #171717;
+    scroll-snap-align: start;
+}
+.two {
+    background-color: #171717;
+    scroll-snap-align: start;
+
+}
+.three {
+    background-color: #171717;
+    scroll-snap-align: start;
+
+}
+.four {
+    background-color: #171717;
+    scroll-snap-align: start;
+
+}
