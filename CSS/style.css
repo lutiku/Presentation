@@ -3,11 +3,13 @@ body {
     scroll-snap-type: y mandatory;
     overflow-y: scroll ;
 
+
 }
 
 .link
 {
     margin-top: 16%;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .navButton{
@@ -16,9 +18,11 @@ body {
     color: white;
 }
 
-.ndongala{
-    font-family: 'Righteous', cursive;
+.navButtonActive{
+    border-color: white;
 }
+
+
 
 .circle {
 
@@ -28,19 +32,20 @@ body {
 }
 
 .arrow {
-    margin-left: 30px;
-    width: 1em;
+    margin-left: 73px;
+    margin-top: 8px;
+    width: 1.3em;
     height: 0.7em;
     position: absolute;
 }
 
 .contact
 {
+    margin-left: 62vw;
     display: flex;
-    flex-direction: row;
-    margin-left: 55vw;
-    width: 200px;
-    height: 40px;
+    cursor: pointer;
+
+
    /* background-color: red;*/
 }
 
@@ -51,7 +56,44 @@ body {
 
 }
 
+.grid{
+    position: absolute;
+    background-color: red;
+    width: 18%;
+    height: 237px;
+    border-radius: 10%;
+    /* margin: 50%; */
+    margin-left: 30vw;
+    margin-top: 46vh;
+}
 
+.divBox{
+    font-family: 'IBM Plex Sans', sans-serif;
+    position: absolute;
+    color: white;
+
+    left: 15%;
+    top: 50%;
+    line-height :82.2858px;
+    letter-spacing: -2.14286px;
+
+    font-size: 80.1428px;
+
+}
+
+.name{
+    opacity: 0;
+}
+
+.descript{
+    position: absolute;
+    color: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+    top: 50%;
+    left: /*15%*/ 33.3%;
+    opacity: 0.5;
+
+}
 
 
 #container .box {
@@ -59,8 +101,9 @@ body {
     height: 100vh;
     display: inline-block;
     position: relative;
+    font-size: 25px;
 }
-#container .box > div {
+/*#container .box > div {
     width: 100px;
     height: 100px;
     font-size: 96px;
@@ -72,6 +115,8 @@ body {
     line-height: 0.7;
     font-weight: bold;
 }
+
+ */
 #container {
 
     overflow-y: scroll;
