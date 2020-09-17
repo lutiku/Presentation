@@ -10,6 +10,21 @@ function activeButton_3() {
 }
 
 
+function desactiveButton_1(){
+    document.getElementById('button_1').style.borderColor = '#adb5bd'
+
+}
+
+function desactiveButton_2(){
+    document.getElementById('button_2').style.borderColor = '#adb5bd'
+
+}
+
+function desactiveButton_3(){
+    document.getElementById('button_3').style.borderColor = '#adb5bd'
+
+}
+
 
 
 let tl = anime.timeline({
