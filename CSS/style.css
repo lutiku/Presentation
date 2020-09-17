@@ -16,11 +16,14 @@ body {
     border-style: none none solid;
     background-color: transparent;
     color: white;
+    border-color: #adb5bd;
 }
 
-.navButtonActive{
+/*.navButtonActive{
     border-color: white;
 }
+
+ */
 
 
 
