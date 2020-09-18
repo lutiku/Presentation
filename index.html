@@ -11,17 +11,21 @@
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
 
 <!-- Navbar -->
+
+
+
 <nav class="navbar sticky-top bg-transparent position-absolute">
 
     <div class="d-flex">
         <a class="navbar-brand text-white ndongala" href="#one"><img class="logo" src="Images/logo.png"/></a>
-        <a class="nav-link link text-white" href="#two"><button class="navButton" id="button_1">Work</button></a>
-        <a class="nav-link link text-white" href="#three"><button class="navButton" id="button_2">About</button></a>
+        <a class="nav-link link text-white" href="#two"><button class="navButton" id="button_1">About</button></a>
+        <a class="nav-link link text-white" href="#three"><button class="navButton" id="button_2">Projects</button></a>
         <a class="nav-link link text-white" href="#four"><button class="navButton" id="button_3">Inspirations</button></a>
 
     </div>
@@ -37,32 +41,58 @@
     </div>
 
 </nav>
+<div id="swup" class="transition-fade">
 
 <div id="container">
     <div id="container2">
 
         <div class="box one" id="one">
-            <div class=" divBox name">Web Devloper</div>
-            <div class="descript">Lutiku Ndongala</div>
+            <!--div class="nameGroupe">
+                <div class=" divBox name">W</div>
+                <div class="divBox">DEVLOPER</div>
+            </div-->
+
+            <img src="Images/BackgroundWeb.gif">
+
+            <div class="descript">Lutiku</div>
+
         </div>
 
         <div class="box two" id="two" onmouseover="activeButton_1()" onmouseout="desactiveButton_1()">
-            <div class="divBox">2</div>
+            <div class="divBox">
+                <canvas id="myChart"></canvas>
+            </div>
         </div>
 
         <div class="box three" id="three" onmouseover="activeButton_2()" onmouseout="desactiveButton_2()">
-            <div class="divBox">3</div>
+            <!--div class="divBox">2</div-->
+            <div class="inspiration">
+                <div class="grid">
+                    <img src="Images/Gzeh.png">
+
+                </div>
+
+                <div class="grid_2 d-flex">
+                    <div class=" sous_grid sous_grid_1"><img src="Images/beTomorrow.png">
+
+                    </div>
+                    <div class="sous_grid sous_grid_2"></div>
+                    <div class="sous_grid sous_grid_3"> <img src="Images/moodBoard.jpg"></div>
+                    <div class="sous_grid sous_grid_4"><img src="Images/dribbble.png"></div>
+
+
+                </div>
+
+            </div>
         </div>
 
 
 
         <div class="box four" id="four"  onmouseover="activeButton_3()" onmouseout="desactiveButton_3()">
-            <!--div class="divBox ">
+            <div class="divBox ">
                 Last
-            </div-->
-            <div class="grid">
-
             </div>
+
 
 
         </div>
@@ -70,11 +100,21 @@
     </div>
 </div>
 
-
+</div>
 </body>
-<!-- Bootstrap JS link -->
+<!-- Chart.JS-->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<!-- SWUP -->
+<script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+<!-- Overlay theme (SWUP) -->
+<script src="dist/SwupOverlayTheme.js"></script>
+
+<!-- animeJS -->
 <script src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
+<!-- Script -->
 <script src="JS/script.js"></script>
+
+<!-- Bootstrap JS link -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
