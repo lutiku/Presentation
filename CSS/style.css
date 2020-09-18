@@ -2,13 +2,40 @@ body {
     margin: 0;
     scroll-snap-type: y mandatory;
     overflow-y: scroll ;
+    background-color: #171717!important;
 
 
 }
 
+
+
+.inspiration{
+    width: 100vw;
+    height: 80vh;
+    margin-top: 13.33%;
+   /* background-color: purple;*/
+    display: flex;
+
+}
+
+
+/*Transition SWUP*/
+
+.transition-fade {
+    transition: 0.4s;
+    opacity: 1;
+}
+
+html.is-animating .transition-fade {
+    opacity: 0;
+}
+
+
+/*_______*/
+
 .link
 {
-    margin-top: 16%;
+    margin-top: 13.34%;
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
@@ -59,15 +86,68 @@ body {
 
 }
 
+
+
 .grid{
     position: absolute;
     background-color: red;
-    width: 18%;
-    height: 237px;
-    border-radius: 10%;
+    width: 40%;
+    height: 53%;
+    border-radius: 2%;
     /* margin: 50%; */
-    margin-left: 30vw;
-    margin-top: 46vh;
+    margin-left: 8.8vw;
+    margin-top: 30px;
+
+
+}
+
+.grid_2{
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: absolute;
+   /* background-color: green;*/
+    width: 40%;
+    height: 53%;
+    border-radius: 2%;
+    /* margin: 50%; */
+   right: 10vw;
+    margin-top: 30px;
+
+}
+
+.sous_grid{
+    width: 49%;
+    height: 48%;
+    border-radius: 2%;
+}
+
+
+
+div.sous_grid img, div.grid img, div#one.box.one img{
+    width: 100%;
+    height: 100%;
+
+}
+div#one.box.one img{
+    position: absolute;
+
+}
+
+.sous_grid_1{
+    background-color: yellow;
+
+}
+
+.sous_grid_2{
+    background-color: yellow;
+}
+
+.sous_grid_3{
+    background-color: yellow;
+}
+
+.sous_grid_4{
+    background-color: yellow;
 }
 
 .divBox{
@@ -86,6 +166,7 @@ body {
 
 .name{
     opacity: 0;
+
 }
 
 .descript{
@@ -161,3 +242,95 @@ body {
     scroll-snap-align: start;
 
 }
+
+
+
+/*Skills*/
+#myChart {
+    cursor: crosshair
+}
+
+.skills-chart {
+    text-align: center;
+    padding: 30px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.skills-chart-legend {
+    margin: 0 auto 15px
+}
+
+.skills-chart-canvas {
+    max-width: 700px;
+    margin: auto
+}
+
+.skills-chart-legend {
+    display: inline-block;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0 20px;
+    line-height: 1;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .05em
+}
+
+.skills-chart-legend:before {
+    content: "";
+    display: block;
+    float: left;
+    margin: 3px 0 0 -15px;
+    height: 9px;
+    width: 9px
+}
+
+.skills-chart-legend--interest {
+    color: #2bb0d4
+}
+
+.skills-chart-legend--interest:before {
+    background: #2bb0d4
+}
+
+.skills-chart-legend--skill {
+    color: #61c191
+}
+
+.skills-chart-legend--skill:before {
+    background: #61c191
+}
+
+
+
+/*Contact Page */
+
+
+
+.divForm{
+    width: 100vw;
+    height: 60vh;
+    background-color: red;
+    margin-top: 15%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.labelInput{
+    display: flex;
+
+}
+input {
+    background-color: transparent;
+
+    width: 20%;
+    border-style : none none solid;
+    border-bottom-color: grey;
+}
+
