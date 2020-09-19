@@ -20,65 +20,94 @@
 
 
 
-<nav class="navbar sticky-top bg-transparent position-absolute">
+    <nav class="navbar sticky-top bg-transparent position-absolute">
 
-    <div class="d-flex">
-        <a class="navbar-brand text-white ndongala" href="#one"><img class="logo" src="Images/logo.png"/></a>
-        <a class="nav-link link text-white" href="#two"><button class="navButton" id="button_1">About</button></a>
-        <a class="nav-link link text-white" href="#three"><button class="navButton" id="button_2">Projects</button></a>
-        <a class="nav-link link text-white" href="#four"><button class="navButton" id="button_3">Inspirations</button></a>
-
-    </div>
-
-    <div class="contact">
-        <a href="Pages/contact.html">
-            <span class="spanContact" onclick="contact()">Contact</span>
-            <svg class="arrow right-white" width="18.8" height="8" viewBox="0 0 16 6.97">
-                <path fill="white" d="M0,4.27V2.7h12.52V0L16,3.48l-3.48,3.48v-2.7H0z"></path>
-            </svg>
-        </a>
-
-    </div>
-
-</nav>
-<div id="swup" class="transition-fade">
-
-<div id="container">
-    <div id="container2">
-
-        <div class="box one" id="one">
-            <!--div class="nameGroupe">
-                <div class=" divBox name">W</div>
-                <div class="divBox">DEVLOPER</div>
-            </div-->
-
-            <img src="Images/BackgroundWeb.gif">
-
-            <div class="descript">Lutiku</div>
+        <div class="d-flex">
+            <a class="navbar-brand text-white ndongala" href="#one"><img alt="Lgo" class="logo" src="Images/logo.png"/></a>
+            <a class="nav-link link text-white" href="#two"><button class="navButton" id="button_1">About</button></a>
+            <a class="nav-link link text-white" href="#three"><button class="navButton" id="button_2">Projects</button></a>
+            <a class="nav-link link text-white" href="#four"><button class="navButton" id="button_3">Inspirations</button></a>
 
         </div>
 
-        <div class="box two" id="two" onmouseover="activeButton_1()" onmouseout="desactiveButton_1()">
-            <div class="divBox">
-                <canvas id="myChart"></canvas>
-            </div>
+        <div class="contact">
+            <a href="Pages/contact.html">
+                <span class="spanContact" onclick="contact()">Contact</span>
+                <svg class="arrow right-white" width="18.8" height="8" viewBox="0 0 16 6.97">
+                    <path fill="white" d="M0,4.27V2.7h12.52V0L16,3.48l-3.48,3.48v-2.7H0z"></path>
+                </svg>
+            </a>
+
         </div>
 
-        <div class="box three" id="three" onmouseover="activeButton_2()" onmouseout="desactiveButton_2()">
-            <!--div class="divBox">2</div-->
-            <div class="inspiration">
-                <div class="grid">
-                    <img src="Images/Gzeh.png">
+    </nav>
+
+    <div id="swup" class="transition-fade">
+
+        <div id="container">
+            <div id="container2">
+
+                <!-- BoX 1-->
+
+                <div class="box one" id="one">
+                    <!--div class="nameGroupe">
+                        <div class=" divBox name">W</div>
+                        <div class="divBox">DEVLOPER</div>
+                    </div-->
+
+                    <img alt="BackgroundImage" src="Images/BackgroundWeb.gif">
+
+
+                    <div class="descript">Lutiku Ndongala</div>
 
                 </div>
 
-                <div class="grid_2 d-flex">
-                    <div class=" sous_grid sous_grid_1"><img src="Images/beTomorrow.png">
+                <!-- BoX 2-->
+
+                <div class="box two" id="two" onmouseover="activeButton_1()" onmouseout="desactiveButton_1()">
+
+                        <canvas id="myChart" width="500" height="200"></canvas>
+                </div>
+
+                <!-- BoX 3-->
+
+                <div class="box three" id="three" onmouseover="activeButton_2()" onmouseout="desactiveButton_2()">
+                    <!--div class="divBox">2</div-->
+                    <div class="inspiration">
+
+                        <div class="grid">
+                            <img src="Images/Gzeh.png">
+                        </div>
+
+                        <div class="grid_2 d-flex">
+                            <div class=" sous_grid sous_grid_1">
+                                <img alt="project" src="Images/beTomorrow.png">
+                            </div>
+
+                            <div class="sous_grid sous_grid_2">
+
+                            </div>
+                            <div class="sous_grid sous_grid_3">
+                                <img alt="project" src="Images/moodBoard.jpg">
+                            </div>
+
+                            <div class="sous_grid sous_grid_4">
+                                <img alt="project" src="Images/dribbble.png">
+                            </div>
+
+
+                        </div>
 
                     </div>
-                    <div class="sous_grid sous_grid_2"></div>
-                    <div class="sous_grid sous_grid_3"> <img src="Images/moodBoard.jpg"></div>
-                    <div class="sous_grid sous_grid_4"><img src="Images/dribbble.png"></div>
+                </div>
+
+
+
+                <div class="box four" id="four"  onmouseover="activeButton_3()" onmouseout="desactiveButton_3()">
+                    <div class="divBox ">
+                        Last
+                    </div>
+
 
 
                 </div>
@@ -86,22 +115,9 @@
             </div>
         </div>
 
-
-
-        <div class="box four" id="four"  onmouseover="activeButton_3()" onmouseout="desactiveButton_3()">
-            <div class="divBox ">
-                Last
-            </div>
-
-
-
-        </div>
-
     </div>
-</div>
-
-</div>
 </body>
+
 <!-- Chart.JS-->
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 <!-- SWUP -->
