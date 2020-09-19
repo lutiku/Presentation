@@ -46,6 +46,10 @@ html.is-animating .transition-fade {
     border-color: #adb5bd;
 }
 
+.navButton:focus {
+    outline: none ;
+}
+
 /*.navButtonActive{
     border-color: white;
 }
@@ -169,14 +173,34 @@ div#one.box.one img{
 
 }
 
-.descript{
+div.descript{
     position: absolute;
     color: white;
     font-family: 'IBM Plex Sans', sans-serif;
-    top: 50%;
-    left: /*15%*/ 33.3%;
+    top: 53%;
+    left: /*15%*/ 1.3%;
     opacity: 0.5;
+    font-size: 19px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
 
+   /* display: flex;
+    flex-direction: column;
+    background-color: rebeccapurple;
+    height: 80vh;
+    justify-content: space-around;
+
+    */
+
+}
+
+.verticalSpan{
+    background-color: white;
+    height: 70px;
+    width: 2px;
+    position: absolute;
+    left: 2.3%;
+    top: 2.3%;
 }
 
 
@@ -230,6 +254,7 @@ div#one.box.one img{
 .two {
     background-color: #171717;
     scroll-snap-align: start;
+    display: flex;
 
 }
 .three {
@@ -246,63 +271,23 @@ div#one.box.one img{
 
 
 /*Skills*/
-#myChart {
-    cursor: crosshair
-}
-
-.skills-chart {
-    text-align: center;
-    padding: 30px;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-.skills-chart-legend {
-    margin: 0 auto 15px
-}
-
-.skills-chart-canvas {
-    max-width: 700px;
-    margin: auto
-}
-
-.skills-chart-legend {
-    display: inline-block;
-    list-style: none;
-    margin: 0 auto;
-    padding: 0 20px;
-    line-height: 1;
-    font-size: 14px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: .05em
-}
-
-.skills-chart-legend:before {
-    content: "";
+/*#myChart {
+    margin-top: 10%;
+    cursor: crosshair;
     display: block;
-    float: left;
-    margin: 3px 0 0 -15px;
-    height: 9px;
-    width: 9px
+    width: 798px;
+    height: 399px;
 }
 
-.skills-chart-legend--interest {
-    color: #2bb0d4
-}
+ */
 
-.skills-chart-legend--interest:before {
-    background: #2bb0d4
-}
 
-.skills-chart-legend--skill {
-    color: #61c191
-}
+#myChart,#myChart2{
+   display: block;
+    margin-top: 10%;
+    cursor: crosshair;
 
-.skills-chart-legend--skill:before {
-    background: #61c191
 }
-
 
 
 /*Contact Page */
@@ -312,7 +297,7 @@ div#one.box.one img{
 .divForm{
     width: 100vw;
     height: 60vh;
-    background-color: red;
+    /* background-color: red; */
     margin-top: 15%;
 }
 
@@ -320,6 +305,11 @@ div#one.box.one img{
     display: flex;
     flex-direction: column;
     text-align: center;
+    width: 50%;
+    height: 100%;
+    /* background-color: rebeccapurple; */
+    justify-content: center;
+    margin-left: 8%;
 }
 
 .labelInput{
@@ -334,3 +324,22 @@ input {
     border-bottom-color: grey;
 }
 
+input:focus {
+    outline: none ;
+    color: white;
+}
+
+.btn-form{
+    border-color: white;
+    background-color: transparent;
+    width: 30%;
+    align-self: center;
+    margin-top: 5%;
+    color: white;
+
+}
+
+.btn-form:hover{
+    background-color: white;
+    color: black;
+}
