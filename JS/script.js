@@ -1,4 +1,55 @@
 
+/*Skills*/
+
+
+let labels = ['Javascript', 'VueJs', 'React', 'ChartJS', 'Bootstrap', 'CSS', 'Swup', 'AnimeJS', 'ThreeJS'];
+let myChart = document.getElementById("myChart").getContext('2d');
+
+let chart = new Chart(myChart, {
+    type: 'radar',
+    data: {
+        labels: labels,
+        datasets: [
+            {
+                label: 'Skills',
+                fill: true,
+                backgroundColor: "rgba(179, 181, 198, 0.2)",
+                borderColor: "rgba(179, 181, 198, 1)",
+                pointBorderColor: "#fff",
+                pointBackgroundColor: "rgba(179, 181, 198, 1)",
+                data: [42, 45, 40, 38, 50, 42, 25, 50, 50]
+            }
+        ]
+    },
+    options: {
+        title: {
+            text: "Front",
+            display: true
+        },
+
+        scale: {
+            gridLines: {
+                color: 'white'/*['black', 'red', 'orange', 'yellow', 'green', 'blue', 'indigo']*/
+            }
+        },
+
+        legend:{
+            labels:{
+                fontColor: 'white'
+
+            },
+
+            text:{
+                fontColor: 'white'
+            },
+
+        }
+    }
+});
+
+
+
+
 /*Transition SWUP */
 
 
@@ -57,60 +108,10 @@ tl.add({
 }, '-=1600' )
 
 
-function contact() {
-    document.getElementById('one').style.backgroundColor = '#adb5bd'
-
-}
 
 
 
-/*Skills*/
 
-
-let labels = ['Javascript', 'VueJs', 'React', 'ChartJS', 'Bootstrap', 'CSS', 'Swup', 'AnimeJS', 'ThreeJS'];
-let myChart = document.getElementById("myChart").getContext('2d');
-
-let chart = new Chart(myChart, {
-    type: 'radar',
-    data: {
-        labels: labels,
-        datasets: [
-            {
-                label: 'Skills',
-                fill: true,
-                backgroundColor: "rgba(179, 181, 198, 0.2)",
-                borderColor: "rgba(179, 181, 198, 1)",
-                pointBorderColor: "#fff",
-                pointBackgroundColor: "rgba(179, 181, 198, 1)",
-                data: [42, 45, 35, 25, 32, 42, 38, 50, 50]
-            }
-        ]
-    },
-    options: {
-        title: {
-            text: "Front",
-            display: true
-        },
-
-        scale: {
-            gridLines: {
-                color: 'white'/*['black', 'red', 'orange', 'yellow', 'green', 'blue', 'indigo']*/
-            }
-        },
-
-        legend:{
-            labels:{
-                fontColor: 'white'
-
-            },
-
-            text:{
-                fontColor: 'white'
-            },
-
-        }
-    }
-});
 
 
 
