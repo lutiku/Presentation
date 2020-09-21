@@ -7,18 +7,6 @@ body {
 
 }
 
-
-
-.inspiration{
-    width: 100vw;
-    height: 80vh;
-    margin-top: 13.33%;
-   /* background-color: purple;*/
-    display: flex;
-
-}
-
-
 /*Transition SWUP*/
 
 .transition-fade {
@@ -31,7 +19,24 @@ html.is-animating .transition-fade {
 }
 
 
-/*_______*/
+.divBox{
+    font-family: 'IBM Plex Sans', sans-serif;
+    position: absolute;
+    color: white;
+
+    left: 15%;
+    top: 50%;
+    line-height :82.2858px;
+    letter-spacing: -2.14286px;
+
+    font-size: 80.1428px;
+
+}
+
+
+
+
+/*____Nav___*/
 
 .link
 {
@@ -50,20 +55,8 @@ html.is-animating .transition-fade {
     outline: none ;
 }
 
-/*.navButtonActive{
-    border-color: white;
-}
-
- */
 
 
-
-.circle {
-
-    position: absolute;
-    margin-top: 5vh;
-    margin-left: 90vw;
-}
 
 .arrow {
     margin-left: 73px;
@@ -78,9 +71,6 @@ html.is-animating .transition-fade {
     margin-left: 62vw;
     display: flex;
     cursor: pointer;
-
-
-   /* background-color: red;*/
 }
 
 .spanContact{
@@ -90,6 +80,14 @@ html.is-animating .transition-fade {
 
 }
 
+/*Projects*/
+.projects{
+    width: 100vw;
+    height: 80vh;
+    margin-top: 13.33%;
+    display: flex;
+
+}
 
 
 .grid{
@@ -138,51 +136,21 @@ div#one.box.one img{
 }
 
 .sous_grid_1{
-    background-color: yellow;
+    background-color: black;
 
 }
 
-.sous_grid_2{
-    background-color: yellow;
-}
 
-.sous_grid_3{
-    background-color: yellow;
-}
-
-.sous_grid_4{
-    background-color: yellow;
-}
-
-.divBox{
-    font-family: 'IBM Plex Sans', sans-serif;
-    position: absolute;
-    color: white;
-
-    left: 15%;
-    top: 50%;
-    line-height :82.2858px;
-    letter-spacing: -2.14286px;
-
-    font-size: 80.1428px;
-
-}
-
-.name{
-    opacity: 0;
-
-}
 
 div.descript{
     position: absolute;
     color: white;
     font-family: 'IBM Plex Sans', sans-serif;
-    top: 53%;
+    top: 95%;
     left: /*15%*/ 1.3%;
     opacity: 0.5;
     font-size: 19px;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
+
 
    /* display: flex;
     flex-direction: column;
@@ -307,6 +275,7 @@ div.descript{
 }
 
 .form{
+
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -398,4 +367,31 @@ textarea:focus, input:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
+}
+
+
+div.inspiration.row.mb-4{
+    position: absolute;
+    width: 100vw;
+    margin-top: 20.33%;
+    display: flex;
+
+}
+
+
+/*Card */
+
+div.card-deck.col-9.ml-3{
+    left:13.33%
+}
+
+p.card-text{
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: white;
+    font-size: 19px;
+}
+
+div.card{
+    background-color: black;
+    box-shadow: 12px 12px 2px 1px rgb(0 0 0 / 20%);
 }
