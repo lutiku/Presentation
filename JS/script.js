@@ -90,8 +90,8 @@ function desactiveButton_3(){
 
 }
 
-
-
+/*AnimeJS */
+/*
 let tl = anime.timeline({
     easing: 'easeOutExpo',
     duration :750
@@ -100,12 +100,13 @@ let tl = anime.timeline({
 
 
 tl.add({
-    targets : '.name',
-    top : '38%',
+    targets : '.form',
     opacity : 1,
     duration :4000
 
 }, '-=1600' )
+
+ */
 
 
 
