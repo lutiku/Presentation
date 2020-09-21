@@ -118,10 +118,20 @@
         modal.style.display = "block";
         var test = document.form.input.value;
 
-    var input = document.getElementsByClassName('input').value ;
 
 
-            document.getElementById('messageAlert').innerHTML = "Thank you " + test + " !  Message well transmitted";
+            if(test == "" ){
+                document.getElementById('messageAlert').innerHTML = "you must enter at least your name";
+                console.log('empty')
+
+
+            }
+
+            else {
+
+                document.getElementById('messageAlert').innerHTML = "Thank you " + test + " !  Message well transmitted";
+
+            }
 
     };
 
